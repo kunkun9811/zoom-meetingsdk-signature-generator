@@ -45,10 +45,10 @@ In terminal, run the following command to clone the repo:
 
 Make a POST request to `http://localhost:4000` (or your deployed url) with the following request body:
 
-| Body                   | Description |
-| -----------------------|-------------|
-| meetingNumber          | The Zoom Meeting / Webinar Number. |
-| role                   | The role `0` to join the meeting or webinar, or `1` to start the meeting. |
+| Body          | Description                                                               |
+| ------------- | ------------------------------------------------------------------------- |
+| meetingNumber | The Zoom Meeting / Webinar Number.                                        |
+| role          | The role `0` to join the meeting or webinar, or `1` to start the meeting. |
 
 ### Example Request
 
@@ -84,12 +84,12 @@ ZoomMtg.join({
   userEmail: userEmail,
   passWord: password,
   success: (success) => {
-    console.log(success)
+    console.log(success);
   },
   error: (error) => {
-    console.log(error)
-  }
-})
+    console.log(error);
+  },
+});
 ```
 
 ## Deployment
